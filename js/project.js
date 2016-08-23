@@ -18,6 +18,8 @@ $(document).ready(function(){
         event.preventDefault();
         $('nav').toggleClass('visible');
     });
+
+    $('.gallery').featherlightGallery();
 });
 
 

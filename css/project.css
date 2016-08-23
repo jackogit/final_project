@@ -220,14 +220,14 @@ footer h4 {
 	opacity: .8;
 }
 
-.featherlight .featherlight-content {
+/*.featherlight .featherlight-content {
 background-color: #666;
 }
 
 .featherlight .featherlight-close-icon {
 color: #ff0000;
 background-color: #666;
-}
+}*/
 
 @media only screen and (max-width: 1000px){
   h1 {

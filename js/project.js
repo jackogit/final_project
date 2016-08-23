@@ -5,8 +5,8 @@ $(document).ready(function(){
 			color : blue;
 		})
 	});
-	
-});  
+
+});
 */
 $(document).ready(function(){
     $(".rate").hover(function(){
@@ -14,7 +14,12 @@ $(document).ready(function(){
 				}, function(){
         $(this).css("background-color", "pink");
     });
+    $('#hamburger').click(function(event) {
+        event.preventDefault();
+        $('nav').toggleClass('visible');
+    });
 });
+
 
 /*
 
@@ -29,7 +34,7 @@ $(document).ready(function(){
 //	$("#toiletSound").click(function(){
 //		var $audio = $('#audio');
 //		var audio = document.getElementById("audio");
-//	
+//
 //		console.log($audio);
 //		console.log('-------------');
 //		console.log(audio);
@@ -39,15 +44,15 @@ $(document).ready(function(){
 	$("body").mouseenter(function(){
 		var $audio = $('#audio');
 		var audio = document.getElementById("audio");
-		
+
 		//console.log($audio);
 		console.log('-------------');
 		console.log(audio);
 		audio.play();
 	});
-	
+
 //All I seem to need is the AUDIO PLAY in next line & html line 65.thats all!
-//		audio.play();	
+//		audio.play();
 	$(".toiletRepairVideo").click(function(){
 		video.play();
 	});
@@ -76,7 +81,3 @@ $(document).ready(function(){
 
 
 */
-
-
-
-

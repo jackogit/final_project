@@ -91,26 +91,31 @@ nav {
     box-shadow: inset 0 0 5px rgba(0, 0, 0, .75);
 }
 
-nav #innernav a {
+nav a {
   padding: 0 .3em;
+  display: none;
 }
 
-nav #innernav a:hover {
+nav.visible a {
+    display: block;
+}
+
+nav a:hover {
   color: yellow;
 }
 
-nav #innernav a.active {
+nav a.active {
   background: #666;
 }
                                         /*  TRYING THIS MOMENTARILY*/
-nav #innernav strong {
+nav strong {
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
 }
 
 nav  a#hamburger {
   display: none;
-  padding: .75em;
+  padding: 6px 24px;
   background-color: red;
 }
 
@@ -289,7 +294,7 @@ footer h4 {
       text-align: center;
       width: 6%;
       right: 0;
-      top: -17px;
+      top: 0;
       position: absolute;
   }
   nav #innernav {

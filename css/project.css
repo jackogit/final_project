@@ -1,10 +1,3 @@
-/*
-#hero {
-  height: 80vh;
-  background: url(".|||||||||||||||||||||||./img_7448.jpg") ;
-  background-size: cover;
-  padding-top: 20px;
-}*/
 * {
 	margin: 0;
 	width: auto;
@@ -14,14 +7,21 @@ body {
 	font-family: "Source Sans Pro", sans-serif;
 	font-size: 37px;
 	line-height: 1.5;
-  margin-top: 209px;
-	max-width: 1500px;
+    margin-top: 209px;
 }
+
 p  	{
 	margin: 0 0 1.5em 0;
 
 
 }
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+}
+
 .button {
   font-family: "Oswald", sans-serif;
   text-decoration: none;
@@ -91,43 +91,50 @@ nav {
     box-shadow: inset 0 0 5px rgba(0, 0, 0, .75);
 }
 
-nav #innernav a {
+nav a {
   padding: 0 .3em;
 }
 
-nav #innernav a:hover {
+nav.visible a {
+    display: block;
+}
+
+nav a:hover {
   color: yellow;
 }
 
-nav #innernav a.active {
+nav a.active {
   background: #666;
 }
                                         /*  TRYING THIS MOMENTARILY*/
-nav #innernav strong {
+nav strong {
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
 }
 
-nav  a#hamburger {
+nav a#hamburger {
   display: none;
-  padding: .75em;
+  padding: 6px 24px;
   background-color: red;
 }
 
 .tagline {
   background-color: skyblue;
- /* background: #C6C6C6;   */
   border-top: 1px solid #AAA;
   font-family: "Merriweather", serif;
   text-align: center;
   margin: 0;
-  padding: 0em 3%;
+  padding: 20px;
   font-size: 1em;
   line-height: 1;
   font-style: italic;
   clear: both;
-  display: none;
 }
+
+.tagline.hidden {
+    display: none;
+}
+
 .blurb {
   background: rgba(255, 255, 255, .8);
   width: 34%;
@@ -173,9 +180,13 @@ nav  a#hamburger {
   background: url("../images/img_7463.jpg") center center no-repeat;
   max-height: 427px;
 }
-.merg {
+.emergency-text {
   color: red;
 }
+.rate:hover .emergency-text {
+    color: purple;
+}
+
 .fixtoilet {
   background-color: pink;
   padding: 3%;
@@ -191,26 +202,43 @@ footer h4 {
   font-size: .8em;
   float: right;
 }
-.callout p{
+
+.callout p {
   font-size: 48%;
 }
 
+/*
+ * Gallery Page Styles
+ */
+.row img {
+	float: left;
+	width: 19%;
+	margin: .5%;
+}
+
+.row a:hover {
+	opacity: .8;
+}
+
+/*.featherlight .featherlight-content {
+background-color: #666;
+}
+
+.featherlight .featherlight-close-icon {
+color: #ff0000;
+background-color: #666;
+}*/
+
 @media only screen and (max-width: 1000px){
-  
- 
   h1 {
-    font-size: 95%; 
+    font-size: 95%;
   }
   header h2 {
     font-size: 75%;
     color: orange;
   }
-  
-  #innernav a {
-    font-size: .75em;
-  }
   body {
-    margin-top: 147px;
+    margin-top: 160px;
   }
   .blurb a {
     font-size: 50%;
@@ -235,11 +263,8 @@ footer h4 {
     #page-header h2 {
       font-size: 50%;
     }
-   #innernav {
-    font-size: 50%;
-    }
     body {
-    margin-top: 119px;
+        margin-top: 119px;
     }
     .callouts {
       max-height: 540;
@@ -249,7 +274,7 @@ footer h4 {
     }
     .you p {
       font-size: 38%;
-      
+
     }
     .we p {
       font-size: 38%;
@@ -284,30 +309,16 @@ footer h4 {
    nav {
     width: 100%
    }
+   nav a {
+       display: none;
+   }
    nav a#hamburger {
       display: block;
       text-align: center;
       width: 6%;
       right: 0;
-      top: -17px;
+      top: 0;
       position: absolute;
-  }
-  nav #innernav {
-    position: absolute;
-    width: 94%;
-    background-color: red;
-  }
- nav #innernav a {
-    text-align: center;
-    width: auto;
-    padding: 1em;
-    border-bottom: solid 1px blue;
-    border-right: none;
-    float: none;
-    display: none;
-  }
-  nav:hover #innernav a {
-    display: block;
   }
   .callout {
     float: none;
@@ -331,16 +342,3 @@ footer h4 {
 @media only screen and (min-width: 400px){}
 
 /*@media only screen and (max-width: 1500px){}*/
-
-
-
-
-
-
-
-
-
-
-
-
-

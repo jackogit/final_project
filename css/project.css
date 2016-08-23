@@ -202,8 +202,31 @@ footer h4 {
   font-size: .8em;
   float: right;
 }
-.callout p{
+
+.callout p {
   font-size: 48%;
+}
+
+/*
+ * Gallery Page Styles
+ */
+.row img {
+	float: left;
+	width: 19%;
+	margin: .5%;
+}
+
+.row a:hover {
+	opacity: .8;
+}
+
+.featherlight .featherlight-content {
+background-color: #666;
+}
+
+.featherlight .featherlight-close-icon {
+color: #ff0000;
+background-color: #666;
 }
 
 @media only screen and (max-width: 1000px){

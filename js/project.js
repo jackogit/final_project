@@ -1,8 +1,7 @@
-$(document).ready(function(){
-
-		$(".callouts").hover(function(){
-			$(".rate").css("color","maroon");
-		});
+$(document).ready(function(){	
+	$(".callouts").hover(function(){
+		$(".rate").css("color","maroon");
+	});
 
     $("div").css("border-radius","5px");
  
